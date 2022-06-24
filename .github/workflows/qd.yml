@@ -4,7 +4,7 @@ name: 'jslsign'
 on:
   push:
   schedule:
-    - cron: '57 13 * * *'
+    - cron: '30 7 * * *'
 
 jobs:
   bot:
@@ -13,4 +13,4 @@ jobs:
       - name: 'Checkout codes' # 步骤一，获取仓库代码
         uses: actions/checkout@v1
       - name: 'Run sign.sh' # 步骤二，执行sh命令文件
-        run: bash sign.sh
+        run: bash sign.sh && node publish-question.js
