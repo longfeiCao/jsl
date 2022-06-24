@@ -1,14 +1,20 @@
-curl 'https://www.baidu.com/sugrec?prod=pc_his&from=pc_web&json=1&sid=36547_36463_36673_36455_31660_36453_36691_36165_36693_36698_36569_36073_36267_26350_36467_36316_36650&hisdata=%5B%7B%22time%22%3A1655977959%2C%22kw%22%3A%22js%20%E8%8E%B7%E5%8F%96%E5%9C%86%E5%BF%83%E5%9D%90%E6%A0%87%22%2C%22fq%22%3A2%7D%2C%7B%22time%22%3A1655979166%2C%22kw%22%3A%22%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E7%9C%9F%E5%AE%9E%E5%A7%93%E5%90%8D%22%2C%22fq%22%3A2%7D%2C%7B%22time%22%3A1656032718%2C%22kw%22%3A%22%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E8%8E%B7%E5%8F%96%E7%99%BB%E9%99%86%E4%BA%BA%E7%94%A8%E6%88%B7%E5%A7%93%E5%90%8D%22%2C%22fq%22%3A2%7D%2C%7B%22time%22%3A1656032882%2C%22kw%22%3A%22js%20math%E6%96%B9%E6%B3%95%22%2C%22fq%22%3A2%7D%2C%7B%22time%22%3A1656032937%2C%22kw%22%3A%22%E4%B8%AD%E5%9B%BD%E7%A5%9E%E7%A7%98%E5%A5%B3%E5%AF%8C%E8%B1%AA5.6%E4%BA%BF%E4%B9%B0%E4%B8%8B%E6%AC%A7%E6%B4%B2%E8%B1%AA%E5%AE%85%22%7D%2C%7B%22time%22%3A1656034237%2C%22kw%22%3A%22github%20%E5%AE%9A%E6%97%B6%E8%84%9A%E6%9C%AC%22%7D%2C%7B%22time%22%3A1656037168%2C%22kw%22%3A%22github%E7%AD%BE%E5%88%B0%E8%84%9A%E6%9C%AC%22%2C%22fq%22%3A2%7D%2C%7B%22time%22%3A1656037288%2C%22kw%22%3A%22.yml%20%E6%96%87%E4%BB%B6%22%7D%2C%7B%22time%22%3A1656037296%2C%22kw%22%3A%22.yml%20github%22%7D%2C%7B%22time%22%3A1656037614%2C%22kw%22%3A%22github%20%E9%83%A8%E7%BD%B2%20node%20%E9%A1%B9%E7%9B%AE%22%2C%22fq%22%3A2%7D%5D&_t=1656042882994&req=2&csor=0' \
-  -H 'Accept: application/json, text/javascript, */*; q=0.01' \
-  -H 'Accept-Language: zh-CN,zh;q=0.9,en;q=0.8' \
-  -H 'Connection: keep-alive' \
-  -H 'Cookie: BIDUPSID=F279B54F6AD2B757D41BC93BD826B968; PSTM=1655867487; BAIDUID=F208C0F73D603CA7586E219BE0C2A59F:FG=1; BD_UPN=12314753; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; delPer=0; BD_CK_SAM=1; PSINO=5; BA_HECTOR=8l258h0h2g840k8k8l1hba3ji14; ZFY=Zuo0jzgjijito4zE0Ln1:AVoBAmap7BPkqIg:ApUlh11w:C; av1_switch_v3=0; RT="z=1&dm=baidu.com&si=3cppwnurdds&ss=l4rrak4y&sl=3&tt=25v&bcn=https%3A%2F%2Ffclog.baidu.com%2Flog%2Fweirwood%3Ftype%3Dperf&ld=qb5&ul=s4w&hd=s65"; BD_HOME=1; BAIDUID_BFESS=DD642659791450341FCAF0485E23357E:FG=1; ab_sr=1.0.1_ZGIxNjNhM2ZmYjEzNzhkZmYzNjY0YWY4NmM4M2M4ZjZlM2RhMmU1ZTkyNTIzMTRlMTUxZTE0NDM4NDc1OWE2NTM0YjE2MDljNjM3ZTE5Y2U2NTc5MmE3ZjE3ODMzNTc2Y2I0ZjE0NzM1MjcyMDJkNDE1ZGMwYjM1OGU5MmFiMjc0YTY0OGMyZjk5MTg4ZjZmNmVkYzZkMjBkMjRmNTU2YQ==; COOKIE_SESSION=27_1_5_9_2_14_0_0_5_5_0_3_85477_0_4_0_1656037617_1655894261_1656037613%7C9%2366_15_1655894258%7C5; H_PS_PSSID=36547_36463_36673_36455_31660_36453_36691_36165_36693_36698_36569_36073_36267_26350_36467_36316_36650' \
-  -H 'Referer: https://www.baidu.com/' \
-  -H 'Sec-Fetch-Dest: empty' \
-  -H 'Sec-Fetch-Mode: cors' \
-  -H 'Sec-Fetch-Site: same-origin' \
-  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36' \
+curl 'https://jsjsl.lexiangla.com/api/v1/points/check-in' \
+  -X 'POST' \
+  -H 'authority: jsjsl.lexiangla.com' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: zh-CN,zh;q=0.9' \
+  -H 'content-length: 0' \
+  -H 'cookie: Hm_lvt_2f79af5e8e8a804fed0daf1cf5e643cf=1641801110; ti18nLng=zh-CN; token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvbGV4aWFuZ2xhLmNvbVwvYXV0aFwvd29ya193ZWNoYXRfbG9naW5fY2FsbGJhY2siLCJpYXQiOjE2NTM1NTA5NjgsImV4cCI6MTY1NjE0Mjk2OCwibmJmIjoxNjUzNTUwOTY4LCJqdGkiOiJZdlNYMXpaSFk5OERseTZVIiwic3ViIjoiNTgyMTI0MzA0ZjEwMTFlYThlZTg1MjU0MDBlZGVmMjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwiY29tcGFueV9pZCI6ImViNWE3Njc2NDYzMTExZWE4NzhiNTI1NDAwMmYxMDIwIiwic3RhZmZfdXVpZCI6IjU4MTYwM2I2NGYxMDExZWFiNjUwNTI1NDAwZWRlZjIxIn0.51SUFeQ22hQGMo9LofDAOXC7UGQc3yQi1Mtkh-eaitg; company_server_type=workwechat; company_code=jsjsl; company_old_code=eb59bc2c463111ea97115254002f1020; company_display_name=%E6%B1%9F%E8%8B%8F%E9%87%91%E4%B8%9D%E5%88%A9; ti18nLng=zh-CN; XSRF-TOKEN=a6MBea3rZtk%252BfpJ5I2MGGsYtdwVwMBoix%252F5DxrgEayK2EUkaSUC42Rue%252Bn0s7GXuwwxTGzgPuFHSK3aVxwE2pzadwZBvr2cpm59zC0DGCOQ%253D' \
+  -H 'origin: https://jsjsl.lexiangla.com' \
+  -H 'referer: https://jsjsl.lexiangla.com/' \
   -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="101", "Google Chrome";v="101"' \
   -H 'sec-ch-ua-mobile: ?0' \
   -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36' \
+  -H 'x-auth-type: api' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  -H 'x-xsrf-token: a6MBea3rZtk%2BfpJ5I2MGGsYtdwVwMBoix%2F5DxrgEayK2EUkaSUC42Rue%2Bn0s7GXuwwxTGzgPuFHSK3aVxwE2pzadwZBvr2cpm59zC0DGCOQ%3D' \
   --compressed
