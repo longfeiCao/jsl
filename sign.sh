@@ -17,4 +17,4 @@ curl 'https://jsjsl.lexiangla.com/api/v1/points/check-in' \
   -H 'x-auth-type: api' \
   -H 'x-requested-with: XMLHttpRequest' \
   -H 'x-xsrf-token: a6MBea3rZtk%2BfpJ5I2MGGsYtdwVwMBoix%2F5DxrgEayK2EUkaSUC42Rue%2Bn0s7GXuwwxTGzgPuFHSK3aVxwE2pzadwZBvr2cpm59zC0DGCOQ%3D' \
-  --compressed
+
