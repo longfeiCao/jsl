@@ -4,7 +4,7 @@ name: 'jslsign'
 on:
   push:
   schedule:
-    - cron: '0 53 13 * * ?'
+    - cron: '57 13 * * *'
 
 jobs:
   bot:
