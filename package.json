@@ -1,0 +1,12 @@
+{
+  "name": "jsl-script",
+  "version": "0.0.1",
+  "description": "jsl script ",
+  "main": "index.js",
+  "repository": "https://github.com/longfeiCao/jsl.git",
+  "author": "clifton",
+  "license": "MIT",
+  "scripts": {
+    "pubQuestion": "node publish-question.js"
+  }
+}
