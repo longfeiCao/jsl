@@ -12,5 +12,7 @@ jobs:
     steps:
       - name: 'Checkout codes' # 步骤一，获取仓库代码
         uses: actions/checkout@v1
+        with:
+          node-version: '18.x'
       - name: 'Run sign.sh' # 步骤二，执行sh命令文件
         run: bash sign.sh && node publish-question.js
