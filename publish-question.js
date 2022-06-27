@@ -276,6 +276,6 @@ function shoucang(target_id) {
   })
 }
 
-/*getCreateCon()*/
+getCreateCon()
 getWendangList()
 getQuestionList()
