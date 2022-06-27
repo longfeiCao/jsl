@@ -107,7 +107,9 @@ function pinglunqingxiang(id) {
     },
     "body": "{\"module_type\":\"company\",\"module_id\":\"global\",\"content\":\"再学习\"}",
     "method": "POST"
-  });
+  }).then(res=>res.json()).then(data=>{
+    console.log("评论轻享==>",data)
+  })
 }
 
 
@@ -224,7 +226,7 @@ function pinglunwendang(target_id,target_type = 'document') {
     "body": `{\"target_id\":\"${target_id}\",\"target_type\":\"document\",\"content\":\"你好谢谢！ /微笑\"}`,
     "method": "POST"
   }).then(res=>res.json()).then(data=>{
-    console.log("评论==>",data)
+    console.log("评论文档==>",data)
   })
 }
 
