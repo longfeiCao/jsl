@@ -20,7 +20,8 @@ function getCreateCon() {
     "method": "GET"
   }).then(res=>res.json()).then(data=>{
     let list = data.data.map(item=>{
-      let content = item.answer.abstract_text || item.answer.content
+      let content = item.answer.abstract_text.split(",")
+      //  || item.answer.content
       return {
         question: item.question.title,
         answer: content.slice(3,content.length-4),
@@ -85,7 +86,7 @@ function pubqingxiang(title,qid,pic) {
   });
 }
 
-/*function pinglunqingxiang(id) {
+function pinglunqingxiang(id) {
   fetch(`https://jsjsl.lexiangla.com/api/v1/shares/${id}/replies`, {
     "headers": {
       "accept": "application/json, text/plain, *!/!*",
@@ -107,7 +108,7 @@ function pubqingxiang(title,qid,pic) {
     "body": "{\"module_type\":\"company\",\"module_id\":\"global\",\"content\":\"再学习\"}",
     "method": "POST"
   });
-}*/
+}
 
 
 function getWendangList() {
@@ -137,10 +138,10 @@ function getWendangList() {
       }
     })
 
-    /*pinglunwendang(list[3].target_id)*/
+    pinglunwendang(list[1].target_id)
     dianzan(list[5].target_id)
     shoucang(list[5].target_id)
-    /*pinglunqingxiang(list[0].target_id)*/
+    pinglunqingxiang(list[1].target_id)
   })
 }
 
