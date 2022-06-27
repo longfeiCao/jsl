@@ -20,7 +20,7 @@ function getCreateCon() {
     "method": "GET"
   }).then(res=>res.json()).then(data=>{
     let list = data.data.map(item=>{
-      let content = item.answer.content || item.answer.abstract_text
+      let content = item.answer.abstract_text || item.answer.content
       return {
         question: item.question.title,
         answer: content.slice(3,content.length-4),
