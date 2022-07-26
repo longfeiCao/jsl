@@ -20,12 +20,12 @@ function getCreateCon() {
     "method": "GET"
   }).then(res=>res.json()).then(data=>{
     let list = data.data.map(item=>{
-      let content = item.answer.abstract_text.split(",")
+      let content = unescape(item.answer.abstract_text).split(",")
       //  || item.answer.content
       return {
-        question: item.question.title,
-        answer: content.slice(3,content.length-4),
-        qid: item.answer.qid,
+        question: unescape(item.question.title),
+        answer: content.slice(3,unescape(content).length-4),
+        qid: unescape(item.answer.qid),
         pic: item.answer.content_abstract.image_url || ''
       }
     })
