@@ -3,6 +3,9 @@ function parseRes(rb){
   // .then((response) => response.body)
   // .then((rb) => {
    return new Promise((resolve, reject) => {
+    // if (!rb?.body?.getReader) {
+    //   return reject(new Error('No body'));
+    // }
       const reader = rb.body.getReader();
       let d = new ReadableStream({
         start(controller) {
@@ -99,8 +102,6 @@ function pub(title,content) {
     },
     "body": `{\"title\":\"${title}\",\"content\":\"${content}\",\"tags\":[\"问题\"]}`,
     "method": "POST"
-  }).then((res)=>{
-    parseRes(res)
   })
 }
 
@@ -126,9 +127,10 @@ function pubqingxiang(title,qid,pic) {
     },
     "body": `{\"module_type\":\"company\",\"module_id\":\"global\",\"multimedia\":{\"type\":\"link\",\"data\":{\"title\":\"${title}\",\"is_lx\":false,\"type\":null,\"pic_url\":\"${pic}\",\"link\":\"${link}\"}},\"content\":\"今日热点\"}`,
     "method": "POST"
-  }).then(res=>{
-    parseRes(res)
   })
+  // .then(res=>{
+  //   parseRes('成功 pubqingxiang==>',res)
+  // })
 }
 
 function pinglunqingxiang(id) {
@@ -152,8 +154,6 @@ function pinglunqingxiang(id) {
     },
     "body": "{\"module_type\":\"company\",\"module_id\":\"global\",\"content\":\"再学习\"}",
     "method": "POST"
-  }).then(res=>{
-    parseRes('轻享评论=>',res)
   })
 }
 
@@ -186,6 +186,8 @@ function getWendangList() {
       }
     })
 
+    console.log("获取文档列表成功");
+
     pinglunwendang(list[1].target_id)
     dianzan(list[5].target_id)
     shoucang(list[5].target_id)
@@ -214,7 +216,7 @@ function getQuestionList() {
     "body": null,
     "method": "GET"
   }).then(res=>res.json()).then(data=>{
-    console.log(data);
+    console.log('获取问题列表成功');
     let list = data.data.map(item=>{
       return {
         id: item.id
@@ -246,12 +248,10 @@ function huida(id) {
     },
     "body": "{\"content\":\"<p>学习了！</p>\",\"is_anonymous\":false}",
     "method": "POST"
-  });
+  })
 }
 
 function pinglunwendang(target_id,target_type = 'document') {
-  console.log(target_id)
-  console.log(`{\"target_id\":\"${target_id}\",\"target_type\":\"${target_type}\",\"content\":\"你好谢谢！ /微笑\"}`)
   fetch("https://jsjsl.lexiangla.com/api/v1/comments", {
     "headers": {
       "accept": "application/json, text/plain, */*",
@@ -273,12 +273,11 @@ function pinglunwendang(target_id,target_type = 'document') {
     "body": `{\"target_id\":\"${target_id}\",\"target_type\":\"document\",\"content\":\"你好谢谢！ /微笑\"}`,
     "method": "POST"
   }).then(res=>res.json()).then(data=>{
-    console.log("评论文档==>",data)
+    console.log("评论文档成功")
   })
 }
 
 function dianzan(target_id) {
-  console.log(target_id)
   fetch(`https://jsjsl.lexiangla.com/api/v1/staff/likes/documents/${target_id}`, {
     "headers": {
       "accept": "application/json, text/plain, */*",
@@ -299,7 +298,7 @@ function dianzan(target_id) {
     "body": null,
     "method": "PUT"
   }).then(res=>res.json()).then(data=>{
-    console.log("点赞===>",data)
+    console.log("点赞成功")
   })
 }
 
@@ -323,6 +322,8 @@ function shoucang(target_id) {
     },
     "body": null,
     "method": "PUT"
+  }).then((res)=>{
+    console.log("收藏成功");
   })
 }
 
