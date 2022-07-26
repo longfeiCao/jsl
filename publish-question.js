@@ -186,7 +186,7 @@ function getWendangList() {
       }
     })
 
-    console.log("获取文档列表成功");
+    console.log("\n获取文档列表成功");
 
     pinglunwendang(list[1].target_id)
     dianzan(list[5].target_id)
@@ -248,6 +248,8 @@ function huida(id) {
     },
     "body": "{\"content\":\"<p>学习了！</p>\",\"is_anonymous\":false}",
     "method": "POST"
+  }).then(res=>res.json()).then(data=>{
+    console.log('回答问题成功');
   })
 }
 
