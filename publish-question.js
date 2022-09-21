@@ -20,12 +20,8 @@ function sign(){
     },
     "body": null,
     "method": "POST"
-  }).then(res=>res.json()).then(data=>{
-    if (data.code == 0) {
-      console.log('签到成功');
-    }else{
-      console.log(data.msg);
-    }
+  }).then(data=>{
+    console.log(JSON.stringify(data))
   })
 }
 
