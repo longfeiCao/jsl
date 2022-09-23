@@ -11,7 +11,6 @@ function sign(){
     "Referer": "https://jsjsl.lexiangla.com/notifications?company_from=jsjsl",
     "Referrer-Policy": "strict-origin-when-cross-origin"
   },
-  "body": null,
   "method": "POST"
 }).then(res=>{console.log(res)})
 }
